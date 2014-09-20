@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script>
+    	mocha.setup('bdd');
+    	//mocha.reporter('html');
+    </script>
+    
+    <script src="bower_components/chai/chai.js"></script>
+    <script>
+        var assert = chai.assert;
+        var expect = chai.expect;
+        var should = chai.should();
+    </script>
+  
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/sinon-chai/lib/sinon-chai.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/detectizr/detectizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor.js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <script src="bower_components/backbone.stickit/backbone.stickit.js"></script>
+        <script src="bower_components/tmpl/tmpl.js"></script>
+        <script src="bower_components/hammerjs/hammer.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/shake.js/shake.js"></script>
+        <script src="bower_components/socket.io-client/dist/socket.io.js"></script>
+        <script src="bower_components/enquire/dist/enquire.js"></script>
+        <script src="bower_components/momentjs/min/moment-with-langs.js"></script>
+        <script src="bower_components/handlebars/handlebars.runtime.min.js"></script>
+        <script src="bower_components/themproject/dist/themproject.js"></script>
+        
+        
+        <script src="scripts/libs/jquery/jquery.csv-0.71.min.js"></script>
+    	<script src="libs/NotificationList.js"></script>
+    	<script src="libs/VehicleInfo_Sim_Array.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/main.js -->
+    <script src="scripts/config.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/templates.js"></script>
+
+    <script src="scripts/core_engine/CoreEngine.js"></script>
+    <script src="scripts/core_engine/TripManager.js"></script>
+    <script src="scripts/core_engine/TripEventManager.js"></script>
+    <script src="scripts/core_engine/VehicleEventManager.js"></script>
+    <script src="scripts/core_engine/ConnectionHandler.js"></script>
+    
+    <!-- m:models -->
+    <script src="scripts/models/Context.js"></script>
+    <script src="scripts/models/Device.js"></script>
+    <script src="scripts/models/Platform.js"></script>
+    <script src="scripts/models/Bridge.js"></script>
+    <script src="scripts/models/Score.js"></script>
+    <script src="scripts/models/User.js"></script>
+    <script src="scripts/models/VehicleEvent.js"></script>
+    <script src="scripts/models/VehicleGpsEvent.js"></script>
+    <script src="scripts/models/TripEvent.js"></script>
+    <script src="scripts/models/TripAccelerationEvent.js"></script>
+    <script src="scripts/models/TripDecelerationEvent.js"></script>
+    
+    <script src="scripts/plugins/WeblinkPlugin.js"></script>
+    <!-- m:collections -->
+    <script src="scripts/collections/TripEventCollection.js"></script>
+    <script src="scripts/collections/Users.js"></script>
+    <!-- m:views -->
+    <script src="scripts/views/HeaderView.js"></script>
+    <script src="scripts/views/SettingsView.js"></script>
+    <script src="scripts/views/TermsAndConditionsView.js"></script>
+    <script src="scripts/views/WelcomeView.js"></script>
+    <!-- m:layouts -->
+    <script src="scripts/layouts/TermsAndConditionsLayout.js"></script>
+    <script src="scripts/layouts/WelcomeLayout.js"></script>
+    <!-- m:controllers -->
+    <script src="scripts/controllers/SettingsController.js"></script>
+    <script src="scripts/controllers/TermsAndConditionsController.js"></script>
+    <script src="scripts/controllers/WelcomeController.js"></script>
+   
+    <!-- m:routes -->
+    <!-- endbuild -->
+    
+    
+    
+    <script src="views/WelcomeView.spec.js"></script>
+    <script src="views/Header.spec.js"></script>
+    <script src="views/RegistrationView.spec.js"></script>
+    
+    <script src="views/History.spec.js"></script>
+    <script src="views/AccidentChecklist.spec.js"></script>
+   
+    <script src="test/controllers/TripTracking.js"></script>
+    <script src="test/views/TripTracking.js"></script>
+    <!-- include spec files here... -->
+      
+    <script src="collections/Users.spec.js"></script>
+    
+    <script src="controllers/Header.spec.js"></script>
+    <script src="controllers/RegistrationController.spec.js"></script>
+    <script src="controllers/HistoryController.spec.js"></script>
+    <script src="controllers/AccidentChecklist.spec.js"></script>
+    <script src="core_engine/ConnectionHandler.spec.js"></script>
+    <script src="core_engine/CoreEngine.spec.js"></script>
+    <script src="core_engine/TripEventManager.spec.js"></script>
+    <script src="core_engine/TripManager.spec.js"></script>
+    <script src="core_engine/VehicleEventManager.spec.js"></script>
+    
+    <script src="models/History.spec.js"></script>
+    <script src="models/Bridge.spec.js"></script>
+    <script src="models/Context.spec.js"></script>
+    <script src="models/Device.spec.js"></script>
+    <script src="models/Platform.spec.js"></script>
+    <script src="models/TripEvent.spec.js"></script>
+    <script src="models/User.spec.js"></script>
+    <script src="models/VehicleEvent.spec.js"></script>
+   
+    <script src="plugins/WeblinkPlugin.spec.js"></script>
+    
+    
+    
+  <script>
+    // Only tests run in real browser, injected script run if options.run == true
+    if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+      //mocha.run();
+      window.onload=function(){mocha.run()};
+    }
+  </script>
+       
+	
+    <script>
+    	//global.testing = "true";
+    	//window.onload=function(){mocha.run()};
+   	</script>
+   	
+</body>
+</html>

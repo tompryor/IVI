@@ -1,0 +1,162 @@
+.back_button_trip_report {
+	margin-left: 30px;
+	}
+	
+.body_trip_report {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	}
+	
+.button_email_report {
+	border: 2px solid white;
+	height: 60px;
+	width: 150px;
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	border-right: 0;
+	float: right;
+	}
+
+.button_text_email_report {
+	font-family: "Gotham Bold" Arial;
+	color: #FFFFFF;
+	font-size: 20px;
+	}
+
+.fa-arrow-left {
+	font-size: 32px;
+	color: #FFFFFF;
+	}
+	
+.getHeight{
+	position: absolute;
+	visibility: hidden;
+	display: block;
+	}
+
+.header_trip_report {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	}
+
+.map_trip_report {
+	padding-left: 30px;
+	}
+	
+.metrics_block_trip_report {
+	height: 230px;
+	}
+	
+.metrics_date_trip_report {
+	font-family: "Gotham Book" Arial;
+	font-size: 24px;
+	color: #ABC8CC;
+	line-height: 32px;
+	}
+	
+.metrics_text_trip_report {
+	font-family: "Gotham Bold" Arial;
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 32px;
+	}
+
+.metrics_line {
+	height: 1px;
+	background: #FFFFFF;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+	
+.metrics_row_trip_report {
+	}
+	
+.metrics_trip_report {
+	font-family: "Gotham Bold" Arial;
+	font-size: 30px;
+	color: #ABC8CC;
+	line-height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	}
+	
+.pre-scrollable {
+	max-height: 166px;
+	}
+	
+.safety_tip_header_text {
+	font-family: "Gotham Bold" Arial;
+	font-size: 20px;
+	color: #ebaa2f;
+	}
+	
+.safety_tip_trip_report {
+	font-family: "Gotham Book" Arial;
+	font-size: 20px;
+	color:#FFFFFF;
+	}
+	
+.scroll_buttons_trip_report{
+	overflow-y: visible;
+	}
+	
+#scrollable_trip_report {
+	padding-bottom: 20px;
+	}	
+
+#scrollable_trip_report::-webkit-scrollbar {
+	display:none;
+	}
+	
+#trip_map {
+	height: 230px; 
+	width: 230px;
+	border: 2px solid #569099;
+	}
+	
+@media ( max-width : 780px) {
+
+#trip_map {
+	height: 190px; 
+	width: 190px;
+	}
+}
+	
+@media ( max-width : 630px) {
+
+.header_general {
+	font-size: 30px;
+	}
+}
+
+@media ( max-width : 540px) {
+	
+.back_button_trip_report {
+	margin-left: 15px;
+	}
+	
+.header_text_trip_report {
+	text-align: center;
+	}
+	
+.trip_report_map {
+	display: none;
+	}
+	
+#trip_map {
+	display:none;
+	}
+	
+		
+}

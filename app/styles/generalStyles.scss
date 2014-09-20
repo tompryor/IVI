@@ -1,0 +1,96 @@
+.back_button {
+	height: 70px;
+	width: 70px;
+	border-radius: 40px;
+	border: 2px solid white !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+
+body { 
+    background: linear-gradient(to bottom, #002663 , #4a8191);
+	margin: 0px 0px 0px 0px;
+	width: auto !important;
+  	overflow-x: hidden !important;
+}
+
+.button_override { 
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+.header_general {
+	font-family: "Gotham Bold" Arial;
+	font-weight: bold;
+	font-size: 40px;
+	color: #ABC8CC;
+	line-height: 46px;
+	}
+
+.upButton {
+	background: #569099;
+	border: 2px solid white;
+	height: 70px;
+	width: 70px;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: .2em;
+	}
+	
+.fa-chevron-up {
+	font-size: 32px;
+	color: #FFFFFF;
+	}
+	
+.downButton {
+	background: #569099;
+	border: 2px solid white;
+	height: 70px;
+	width: 70px;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4.2em;
+	}
+
+.fa-chevron-down {
+	font-size: 32px;
+	color: #FFFFFF;
+	
+	}
+
+.scroll_button_disabled {
+	disabled: disabled;
+	opacity: .5;
+	}
+	
+.report_detail_scroll_block_height {
+	max-height: 166px;
+	}
+	
+	
+@media (max-width: 665px) {
+
+.back_button{
+	height: 50px;
+	width: 50px;
+	}
+	
+.upButton {
+	height: 50px;
+	width: 50px;
+	}
+
+.downButton {
+	height: 50px;
+	width: 50px;
+	margin-top: 3em;
+	}
+	
+	
+}

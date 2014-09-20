@@ -1,0 +1,60 @@
+/*
+    Document   : style
+    Created on : July 29, 2014
+    Author     : Abalta
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/**********************
+***** Vehicle Info UI
+***********************/
+ /* Center elements in table cell */
+ table {
+     border-collapse: collapse;
+ 
+}
+td {
+    text-align: left; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+tr {
+    border: 1px solid #111;       
+}
+.property-title {
+    text-align: left;
+}
+.checkbox-cell {
+    text-align:center;
+}
+.zone-cell {
+    padding: 0 40px;
+}
+
+#buttons {
+    position: fixed;
+    
+}
+
+#save {
+    margin: 50px 0px 50px 0px;
+}
+
+
+/**********************
+ ** Media
+ **********************/
+
+@media (max-width: 400px) {
+    html, .ui-mobile label { font-size: 14px; }
+}
+
+@media (min-width: 700px) {
+    html, .ui-mobile label { font-size: 24px; }
+    .vehicle-subproperty {
+        padding: 20px 20px;
+    }
+    .ui-content {
+        padding: 0 5%;
+    }    
+}

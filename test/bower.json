@@ -1,0 +1,10 @@
+{
+  "name": "libertymutual-ivi-base-app",
+  "private": true,
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "chai": "~1.9.1",
+    "sinon-chai": "~2.5.0",
+    "sinonjs": "~1.10.2"
+  }
+}

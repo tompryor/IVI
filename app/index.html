@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>libertymutual-ivi-base-app</title>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
+
+		<link rel="icon" type="image/png" href="icons/favicon.png">
+
+		<!-- iPhone -->
+		<link rel="apple-touch-icon" href="icons/apple-iphone.png">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-iphone.png" media="(device-width: 320px)">
+		<!-- iPhone (Retina) -->
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-iphone-retina.png">
+		<link href="splash/apple-splash-iphone-retina.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<!-- iPhone 5 -->
+		<link href="splash/apple-splash-iphone-retina5.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<!-- iPad -->
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-ipad.png">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="splash/apple-splash-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+        <!-- iPad (Retina) -->
+		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-ipad-retina.png">
+		<link href="splash/apple-splash-ipad-portrait-retina.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="splash/apple-splash-ipad-landscape-retina.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<!-- Android -->
+        <link rel="shortcut icon" sizes="72x72" href="icons/android-s.png">
+        <link rel="shortcut icon" sizes="128x128" href="icons/android-m.png">
+        <link rel="shortcut icon" sizes="196x196" href="icons/android-l.png">
+
+        <!--
+            PLEASE DON'T CHANGE OR REMOVE THE COMMENTS.
+            All comments in this file are necessary for the build process.
+            For further information go to:
+            https://github.com/yeoman/grunt-usemin
+        -->
+
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="bower_components/themproject/dist/themproject.css">
+        <link rel="stylesheet" href="bower_components/themproject/dist/themproject_android_light.css">
+        <link rel="stylesheet" href="bower_components/themproject/dist/themproject_android_dark.css">
+        <link rel="stylesheet" href="bower_components/themproject/dist/themproject_ios.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+        <!-- endbuild -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/detectizr/detectizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+    
+    
+		<main role="main" id="main"></main>
+		
+        <!-- build:js scripts/vendor.js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <script src="bower_components/backbone.stickit/backbone.stickit.js"></script>
+        <script src="bower_components/tmpl/tmpl.js"></script>
+        <script src="bower_components/hammerjs/hammer.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/shake.js/shake.js"></script>
+        <script src="bower_components/socket.io-client/dist/socket.io.js"></script>
+        <script src="bower_components/enquire/dist/enquire.js"></script>
+        <script src="bower_components/momentjs/min/moment-with-langs.js"></script>
+        <script src="bower_components/handlebars/handlebars.runtime.min.js"></script>
+        <script src="bower_components/themproject/dist/themproject.js"></script>
+        <!-- endbuild -->
+        <!-- build:js({.tmp,app}) scripts/main.js -->
+        <script src="scripts/config.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/templates.js"></script>
+        <script src="scripts/libs/jquery/jquery.csv-0.71.min.js"></script>
+        <script src="libs/NotificationList.js"></script>
+        <script src="libs/VehicleInfo_Sim_Array.js"></script>
+        <script src="scripts/core_engine/CoreEngine.js"></script>
+        <script src="scripts/core_engine/VehicleEventManager.js"></script>
+        <script src="scripts/core_engine/ConnectionHandler.js"></script>
+        <script src="scripts/core_engine/TripEventManager.js"></script>
+        <script src="scripts/core_engine/TripManager.js"></script>
+        <script src="scripts/plugins/WeblinkPlugin.js"></script>
+        <script src="scripts/models/History.js"></script>
+        <!-- m:models -->
+        <script src="scripts/models/Bridge.js"></script>
+        <script src="scripts/models/User.js"></script>
+        <script src="scripts/models/Device.js"></script>
+        <script src="scripts/models/Context.js"></script>
+        <script src="scripts/models/Platform.js"></script>
+        <script src="scripts/models/Score.js"></script>
+        <script src="scripts/models/TripEvent.js"></script>
+        <script src="scripts/models/VehicleEvent.js"></script>
+        <script src="scripts/models/VehicleGpsEvent.js"></script>
+        <script src="scripts/models/TripAccelerationEvent.js"></script>
+        <script src="scripts/models/TripDecelerationEvent.js"></script>
+        <script src="scripts/models/Error.js"></script>
+        <!-- m:collections -->
+        <script src="scripts/collections/TripEventCollection.js"></script>
+        <script src="scripts/collections/Users.js"></script>
+        <script src="scripts/views/SettingsView.js"></script>
+        <script src="scripts/views/HeaderView.js"></script>
+        <script src="scripts/views/TermsAndConditionsView.js"></script>
+        <script src="scripts/views/WelcomeView.js"></script>
+        <script src="scripts/views/RegistrationView.js"></script>
+        <script src="scripts/views/History.js"></script>
+        <script src="scripts/views/AccidentChecklist.js"></script>
+        <script src="scripts/views/ErrorView.js"></script>
+        <script src="scripts/views/ReportDetailView.js"></script>
+        <script src="scripts/views/TripTracking.js"></script>
+        <!-- m:views -->
+        <script src="scripts/layouts/WelcomeLayout.js"></script>
+        <script src="scripts/layouts/TermsAndConditionsLayout.js"></script>
+        <script src="scripts/layouts/RegistrationLayout.js"></script>
+        <script src="scripts/layouts/HistoryLayout.js"></script>
+        <script src="scripts/layouts/AccidentChecklist.js"></script>
+        <script src="scripts/layouts/ErrorLayout.js"></script>
+        <script src="scripts/layouts/ReportDetailLayout.js"></script>
+        <script src="scripts/layouts/TripTrackingLayout.js"></script>
+        <!-- m:layouts -->
+        <script src="scripts/controllers/RegistrationController.js"></script>
+        <script src="scripts/controllers/HistoryController.js"></script>
+        <script src="scripts/controllers/AccidentchecklistController.js"></script>
+        <script src="scripts/controllers/TripTrackingController.js"></script>
+        <!-- m:controllers -->
+        <script src="scripts/controllers/TermsAndConditionsController.js"></script>
+        <script src="scripts/controllers/SettingsController.js"></script>
+        <script src="scripts/controllers/WelcomeController.js"></script>
+        <script src="scripts/controllers/ErrorController.js"></script>
+        <script src="scripts/controllers/ReportDetailController.js"></script>
+        <!-- m:routes -->
+        <!-- endbuild -->        
+</body>
+</html>
